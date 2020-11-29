@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey form</title>
+    <style type="text/css" media="all">
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    #container {
+        background-image: url(/Project/Skate.png);
+        background-repeat: no-repeat;
+        background-size: c;
+        
+      }
+     #title{
+       color: white;
+       display: flex;
+       justify-content: center;
+      text-align: center;
+      font-size: 40px;
+   
+      top:0;
+     }
+     #description{
+       color: whitesmoke;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       font-size: 20px;
+     }
+     #survey-form{
+       background-color:violet;
+       margin: 0 auto;
+       padding: 0 auto;
+     }
+     #name{
+       font-size: 20px;
+       display:block;
+   margin: 10px;
+       color:white;
+     }
+          #email{
+            font-size: 20px;
+          display:block;
+          margin: 10px;
+          color:white;
+          }
+               #age{
+                 font-size: 20px;
+               display:block;
+               margin: 10px;
+               color:white;
+               }
+         #lab{
+         font-size: 20px;
+         margin:10px;
+         color:white;
+         } 
+         #rad{
+           
+           margin:10px;
+         }
+     
+    #number-label {
+       padding: 5px;
+       margin:5px 5px 30px 10px;
+       width: 90%;
+       border-radius: 5px;
+       
+     }
+     #name-label{
+     padding: 5px;
+     margin: 5px 5px 30px 10px;
+     width: 90%;
+     border-radius: 5px;
+     }
+     #Email-label{
+     padding: 5px;
+     margin:5px 5px 30px 10px;
+     width: 90%;
+     border-radius: 5px;
+     }
+     #select{
+       padding: 5px;
+       margin: 5px 5px 30px 10px;
+       width: 90%;
+       border-radius: 5px;
+     }
+     #hat{
+       font-size: 20px;
+       display: block;
+       color: white;
+       margin: 10px;
+     }
+     span{
+       font-size: 15px;
+     }
+     #area{
+       margin: 5px 5px 30px 10px;
+       padding: 5px;
+     }
+     #submit{
+      margin: 40px;
+      width: 80%;
+      height: 10vh;
+      background-color: green;
+     }
+      
+    </style>
+</head>
+  
+<body id="container"><br /><br />
+  <h1 id="title">freeCodeCamp <br />Survey Form</h1><br />
+  <p id="description">Thank you for taking the time to help <br />us improve the platform</p><br /><br /><br />
+  
+  
+    <form id="survey-form" action="" method="get" accept-charset="utf-8"><br />
+      <label id="name" for="Name">Name</label>
+      <input placeholder="Enter your name" type="" name="name" id="name-label" value="" required/>
+      
+      <label id="email" for="email">Email</label>
+      <input placeholder="Enter Your Email" type="email" name="" id="Email-label" value="" />
+      
+      <label id="age" for="Age">Age <span>(optional)</span></label>
+      <input placeholder="Age" type="number" name="" id="number-label" value="" />
+      
+      <label id="hat" for="">Which option best describes your curent role?</label>
+      <select name="select" id="select" >
+        <option  value="">Select current role</option >
+        <option value="">Student</option >
+        <option value="">Full Time Job</option>
+        <option value="">Full Fime Fearner</option>
+        <option value="">Prefer not to say</option>
+        <option value="Other">Other</option>
+        
+        
+      </select>
+      
+      <label id="lab" for="">Would you recommend freeCodeCamp to your friends?</label><br />
+      <input checked type="radio" name="" id="rad" value="" />
+      <label id="lab" for="">Definitely</label><br />
+      
+      <input  type="radio" name="" id="rad" value="" />
+      <label id="lab" for="">Maybe</label><br />
+      
+      <input type="radio" name="" id="rad" value="" />
+      <label id="lab" for="">Not sure</label><br /><br />
+      
+      <label id="hat" for=""> What is your favourite features of freeCodeCamp?</label>
+      <select name="" id="select">
+        <option value="">Select an option</option>
+        <option value="">Challenges</option>
+        <option value="">Projects</option>
+        <option value="">Community</option>
+        <option value="">Open source</option>
+        
+      </select>
+      
+      <label id="hat" for="">What would you like to see improved? <span>(Check all that apply)</span></label>
+      <input type="checkbox" name="" id="rad" value="" />
+      <label id="lab" for="">Front-end projects</label><br />
+      
+      <input type="checkbox" name="" id="rad" value="" />
+      <label id="lab" for="">Back-end projects</label><br />
+      
+      <input type="checkbox" name="" id="rad" value="" />
+      <label id="lab" for="">Digital visualization</label><br /><br />
+      
+      <label id="hat" for="">Any comments or suggestions?</label>
+      <textarea placeholder="Enter your comment here...." name="" id="area" rows="8" cols="40"></textarea><br />
+      
+   <input type="submit" name="" id="submit" value="submit" />
+      
+      
+      
+      
+    </form>
+  
+  
+
+</body>
+
+</html>
